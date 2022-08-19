@@ -11,6 +11,5 @@ matplot(y, psi, type = "l", ylim = c(-4, 4), lwd = 2,
         ylab = "Yeo-Johnson transformation", 
         main = "Yeo-Johnson transformation with some lambda values")
 abline(v = 0, h = 0)
-legend(x = 1, y = -0.5, lty = 1:lltry, legend = as.character(ltry),
-       lwd = 2, col = 1:lltry) 
+legend(x = 1, y = -0.5, lty = 1:lltry, legend = as.character(ltry), lwd = 2, col = 1:lltry) 
 ## End(Not run)
