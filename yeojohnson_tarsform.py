@@ -6,11 +6,8 @@ import numpy as np
 
 df = pd.read_csv('forestfires.csv', encoding='cp1252')
 df.head()
-
 df.describe()
-
 cdf = df[['X', 'Y','FFMC', 'DMC', 'DC', 'ISI', 'temp', 'RH', 'wind', 'rain', 'area']]
-
 from scipy.stats import yeojohnson
 yf_target, lam = yeojohnson(df["area"])
 df['yf_target']=yf_target
