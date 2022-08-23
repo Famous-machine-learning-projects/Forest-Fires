@@ -4,7 +4,6 @@ lltry <- length(ltry)
 psi <- matrix(as.numeric(NA), nn, lltry)
 for (ii in 1:lltry)
   psi[, ii] <- yeo.johnson(y, lambda = ltry[ii])
-
 ## Not run: 
 matplot(y, psi, type = "l", ylim = c(-4, 4), lwd = 2,
         lty = 1:lltry, col = 1:lltry, las = 1,
